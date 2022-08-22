@@ -39,6 +39,7 @@ let weather = {
 document.querySelector(".search button").addEventListener("click", function () {
   // add click to button
   weather.search();
+  document.querySelector(".search-bar").value = ""; //clear search bar after clicking
 });
 
 document.querySelector(".search-bar").addEventListener("keyup", function (e) {
